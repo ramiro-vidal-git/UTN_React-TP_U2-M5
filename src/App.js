@@ -1,17 +1,11 @@
-import logo from './logo.svg';
+//import logo from './logo.svg';
 import './App.css';
+import VectorDisplay from './vectorDisplay/vectorDisplay';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <h1>Bienvenido</h1>
-        <p>
-          A la diplomatura en React
-        </p>
-        <img src={logo} className="App-logo" alt="logo" />
-        
-      </header>
+      <VectorDisplay />
     </div>
   );
 }

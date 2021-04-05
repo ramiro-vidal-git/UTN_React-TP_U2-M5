@@ -2,37 +2,82 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+div.vectorDisplay {
+  width: fit-content;
+  height: max-content;
+  margin: auto;
+  background-color: #ffffff;
+  border: 1px solid #ffffff;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+div.outter {
+  position: relative;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin: 20px;
+  padding: 5px;
+  border: 2px solid #0000ff;
+  width: 600px;
+  height: 120px;
 }
 
-.App-link {
-  color: #61dafb;
+div.outter button {
+  position: absolute;
+  top: 1px;
+  right: 1px;
+  text-align: center;
+  padding: auto;
+  display: none; 
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+div.outter:hover {
+  border: 2px solid #ffa500;
+}
+
+div.outter:hover button {
+  display: block;
+}
+
+div.outter img {
+  border: 2px solid #ffa500;
+  height: 98%;
+  width: 20%;
+}
+
+div.outter aside {
+  margin: 2px;
+  padding: 0px;
+  width: 80%;
+}
+
+div.outter input.title {
+  color: #ffa500;
+  font-size: 30px;
+  padding-left: 2%;
+  border: 1px solid #ffa500;
+  height: 30%;
+  width: 98%;
+  text-align: left;
+}
+
+input.title::placeholder {
+  color: #ffa500;
+}
+
+div.outter input.description {
+  color: #808080;
+  font-size: 20px;
+  margin: 0px;
+  padding-left: 2%;
+  border: 1px solid #808080;
+  height: 65%;
+  width: 98%;
+  text-align: left;
+}
+
+input.title::value {
+  color: #ffa500;
+}
+
+button.addCard {
+  margin:15px;
 }
